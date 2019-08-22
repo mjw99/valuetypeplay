@@ -5,7 +5,7 @@
 
 ## [Ubuntu Bionic](http://releases.ubuntu.com/bionic)
 
-1. Obtain the JVM
+1. Obtain the valhalla JVM:
 ```
 wget https://download.java.net/java/early_access/valhalla/3/openjdk-14-valhalla+3-48_linux-x64_bin.tar.gz
 tar xfvz openjdk-14-valhalla+3-48_linux-x64_bin.tar.gz
@@ -23,3 +23,15 @@ cd valueTypePlay
 mvn clean package && java -jar ./target/benchmarks.jar
 ```
 
+# Results
+
+With inline on Vector3D class:
+```
+Benchmark        Mode  Cnt   Score     Error  Units
+All.doBenchmark  avgt   10  ≈ 10⁻⁸             s/op
+```
+Without inline on Vector3D class:
+```
+Benchmark        Mode  Cnt  Score    Error  Units
+All.doBenchmark  avgt   10  0.014 ±  0.001   s/op
+```
