@@ -3,7 +3,7 @@
 
 # QuickStart
 
-## [Debian Wheezy](http://www.debian.org/releases/wheezy/) / [Ubuntu Precise](http://releases.ubuntu.com/precise/) / [Ubuntu Trusty](http://releases.ubuntu.com/trusty/)
+## [Ubuntu Bionic](http://releases.ubuntu.com/bionic)
 
 1. Obtain the JVM
 ```
