@@ -24,15 +24,3 @@ cd valueTypePlay
 mvn clean package && java -jar ./target/benchmarks.jar
 ```
 
-# Results
-
-With inline on Vector3D class:
-```
-Benchmark        Mode  Cnt   Score     Error  Units
-All.doBenchmark  avgt   10  ≈ 10⁻⁸             s/op
-```
-Without inline on Vector3D class:
-```
-Benchmark        Mode  Cnt  Score    Error  Units
-All.doBenchmark  avgt   10  0.014 ±  0.001   s/op
-```
