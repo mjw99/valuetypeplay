@@ -20,7 +20,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 ```
 cd ~
 git clone https://github.com/mjw99/valuetypeplay.git
-cd valueTypePlay
+cd valuetypeplay
 mvn clean package && java -jar ./target/benchmarks.jar
 ```
 
