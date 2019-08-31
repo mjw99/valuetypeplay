@@ -25,7 +25,9 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class All {
 
-	int count = 50_000_000;
+	final int count = 10_000_000;
+
+	double[] result = new double[count];
 
 	Vector3D[] vectors = new Vector3D[count];
 
@@ -46,7 +48,7 @@ public class All {
 
 		for (int i = 0; i < count; i++) {
 
-			vectors[i].getNorm();
+			result[i] = vectors[i].getNorm();
 		}
 
 	}
