@@ -23,7 +23,7 @@ import java.util.concurrent.ThreadLocalRandom;
 @Warmup(iterations = 5)
 @Measurement(iterations = 10)
 
-public class All {
+public class Vector3DBenchmark {
 
 	final int count = 10_000_000;
 

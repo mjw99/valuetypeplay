@@ -1,0 +1,56 @@
+package name.mjw.valuetypeplay;
+
+import org.openjdk.jmh.annotations.Benchmark;
+import org.openjdk.jmh.annotations.BenchmarkMode;
+import org.openjdk.jmh.annotations.CompilerControl;
+import org.openjdk.jmh.annotations.Fork;
+import org.openjdk.jmh.annotations.Measurement;
+import org.openjdk.jmh.annotations.OutputTimeUnit;
+import org.openjdk.jmh.annotations.Setup;
+import org.openjdk.jmh.annotations.State;
+import org.openjdk.jmh.annotations.Warmup;
+
+import static java.util.concurrent.TimeUnit.SECONDS;
+import static org.openjdk.jmh.annotations.Mode.AverageTime;
+import static org.openjdk.jmh.annotations.Scope.Thread;
+
+import java.util.concurrent.ThreadLocalRandom;
+
+@State(Thread)
+@OutputTimeUnit(SECONDS)
+@BenchmarkMode(AverageTime)
+@Fork(value = 1)
+@Warmup(iterations = 5)
+@Measurement(iterations = 10)
+
+public class InlineVector3DBenchmark {
+
+	final int count = 10_000_000;
+
+	double[] result = new double[count];
+
+	InlineVector3D[] vectors = new InlineVector3D[count];
+
+	@Setup
+	public void setup() {
+
+		for (int i = 0; i < count; i++) {
+
+			vectors[i] = new InlineVector3D(ThreadLocalRandom.current().nextDouble(),
+					ThreadLocalRandom.current().nextDouble(), ThreadLocalRandom.current().nextDouble());
+		}
+
+	}
+
+	@Benchmark
+	@CompilerControl(CompilerControl.Mode.DONT_INLINE)
+	public void doBenchmark() {
+
+		for (int i = 0; i < count; i++) {
+
+			result[i] = vectors[i].getNorm();
+		}
+
+	}
+
+}
