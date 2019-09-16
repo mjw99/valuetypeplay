@@ -29,7 +29,6 @@ public class InlineVector3DBenchmark {
 	final int count = 10_000_000;
 
 	double[] result;
-	double singleResult;
 
 	InlineVector3D[] vectors;
 
