@@ -27,13 +27,14 @@ mvn clean package && java -jar ./target/benchmarks.jar
 3. Results:
 
 ```
-117779bd
+23045e59b2
 Ubuntu 18.04.3 LTS
 AMD Ryzen 7 2700 Eight-Core Processor
 microcode	: 0x800820d
-Linux lags 4.15.0-62-generic #69-Ubuntu SMP Wed Sep 4 20:55:53 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+Linux lags 4.15.0-72-generic #81-Ubuntu SMP Tue Nov 26 12:20:02 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
 
 Benchmark                            Mode  Cnt  Score   Error  Units
-InlineVector3DBenchmark.doBenchmark  avgt   10  2.614 ± 0.073  ns/op
-Vector3DBenchmark.doBenchmark        avgt   10  4.120 ± 0.041  ns/op
+InlineVector3DBenchmark.doBenchmark  avgt   10  2.593 ± 0.004  ns/op
+Vector3DBenchmark.doBenchmark        avgt   10  3.218 ± 0.090  ns/op
+
 ```
