@@ -27,7 +27,7 @@ mvn clean package && java -jar ./target/benchmarks.jar
 3. Results:
 
 ```
-23045e59b2
+https://github.com/openjdk/valhalla/commit/23045e59b2995352e667ba4bcabddcc38b91b3af
 Ubuntu 18.04.3 LTS
 AMD Ryzen 7 2700 Eight-Core Processor
 microcode	: 0x800820d
