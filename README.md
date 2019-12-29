@@ -6,7 +6,7 @@
 ## [Ubuntu Bionic](http://releases.ubuntu.com/bionic)
 
 1. Obtain the valhalla JVM:
-```
+```bash
 wget https://download.java.net/java/early_access/valhalla/4/openjdk-14-valhalla+4-55_linux-x64_bin.tar.gz
 tar xfz openjdk-14-valhalla+4-55_linux-x64_bin.tar.gz
 
@@ -17,7 +17,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 
 2. Compile and run the benchmark:
 
-```
+```bash
 cd ~
 git clone https://github.com/mjw99/valuetypeplay.git
 cd valuetypeplay
