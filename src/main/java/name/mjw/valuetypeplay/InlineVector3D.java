@@ -1,6 +1,6 @@
 package name.mjw.valuetypeplay;
 
-inline public class InlineVector3D {
+public primitive class InlineVector3D {
 
 	private final double x;
 	private final double y;
