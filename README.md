@@ -3,7 +3,7 @@
 
 # QuickStart
 
-## [Ubuntu Bionic](http://releases.ubuntu.com/bionic)
+## [Ubuntu Focal](http://releases.ubuntu.com/focal)
 
 1. Obtain the valhalla JVM:
 ```bash
