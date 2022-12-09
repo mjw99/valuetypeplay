@@ -24,22 +24,22 @@ import java.util.concurrent.ThreadLocalRandom;
 @Warmup(iterations = 5)
 @Measurement(iterations = 10)
 
-public class InlineVector3DBenchmark {
+public class ValueVector3DBenchmark {
 
 	final int count = 10_000_000;
 
 	double[] result;
 
-	InlineVector3D[] vectors;
+	ValueVector3D[] vectors;
 
 	@Setup
 	public void setup() {
 		result = new double[count];
-		vectors = new InlineVector3D[count];
+		vectors = new ValueVector3D[count];
 
 		for (int i = 0; i < count; i++) {
 
-			vectors[i] = new InlineVector3D(ThreadLocalRandom.current().nextDouble(),
+			vectors[i] = new ValueVector3D(ThreadLocalRandom.current().nextDouble(),
 					ThreadLocalRandom.current().nextDouble(), ThreadLocalRandom.current().nextDouble());
 		}
 

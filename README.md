@@ -7,10 +7,10 @@
 
 1. Obtain the valhalla JVM:
 ```bash
-wget https://download.java.net/java/early_access/valhalla/4/openjdk-14-valhalla+4-55_linux-x64_bin.tar.gz
-tar xfz openjdk-14-valhalla+4-55_linux-x64_bin.tar.gz
+wget https://download.java.net/java/early_access/valhalla/20/openjdk-20-valhalla+20-75_linux-x64_bin.tar.gz
+tar xf openjdk-20-valhalla+20-75_linux-x64_bin.tar.gz
 
-cd jdk-14
+cd jdk-20
 export JAVA_HOME=`pwd`
 export PATH=$JAVA_HOME/bin:$PATH
 ```
