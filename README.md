@@ -28,7 +28,7 @@ mvn clean package && java -jar  --enable-preview ./target/benchmarks.jar
 
 ```
 openjdk-23-valhalla+1-90_linux-x64_bin.tar.gz
-Ubuntu 20.04.5 LTS
+Ubuntu 22.04.5 LTS
 AMD Ryzen 7 2700 Eight-Core Processor
 microcode	: 0x800820d
 Linux lags 6.8.0-40-generic #40~22.04.3-Ubuntu SMP PREEMPT_DYNAMIC Tue Jul 30 17:30:19 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
