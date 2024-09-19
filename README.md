@@ -3,7 +3,7 @@
 
 # QuickStart
 
-## [Ubuntu Focal](http://releases.ubuntu.com/focal)
+## [Ubuntu Jammy](http://releases.ubuntu.com/jammy)
 
 1. Obtain the valhalla JVM:
 ```bash
