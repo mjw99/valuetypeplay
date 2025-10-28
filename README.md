@@ -3,7 +3,7 @@
 
 # QuickStart
 
-## [Ubuntu 24.04]
+## Ubuntu 24.04
 
 1. Obtain the valhalla JVM:
 ```bash
