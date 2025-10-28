@@ -3,7 +3,7 @@
 
 # QuickStart
 
-## [Ubuntu Jammy](http://releases.ubuntu.com/jammy)
+## [Ubuntu 24.04]
 
 1. Obtain the valhalla JVM:
 ```bash
